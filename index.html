@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lorem Ipsum</title>
+
+    <style>
+        /* =========================================================
+           VARIÁVEIS DA PALETA
+           Altere somente estes valores para mudar as cores do site.
+           ========================================================= */
+        :root {
+            --azul-escuro: #0b1f3a;
+            --azul: #145da0;
+            --azul-medio: #1f7acb;
+            --azul-claro: #dceeff;
+            --azul-fundo: #f4f8fc;
+            --branco: #ffffff;
+            --texto: #1f2937;
+            --borda: #c7d9ea;
+            --sombra: rgba(11, 31, 58, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: var(--texto);
+            background: var(--azul-fundo);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--azul-escuro), var(--azul));
+            color: var(--branco);
+            text-align: center;
+            padding: 48px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: var(--branco);
+            border-bottom: 1px solid var(--borda);
+            box-shadow: 0 2px 8px var(--sombra);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 12px 20px;
+        }
+
+        nav a {
+            display: block;
+            color: var(--azul-escuro);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            background: var(--azul-claro);
+            color: var(--azul);
+        }
+
+        main {
+            width: min(1100px, 92%);
+            margin: 40px auto;
+        }
+
+        section {
+            background: var(--branco);
+            padding: 32px;
+            margin-bottom: 30px;
+            border: 1px solid var(--borda);
+            border-radius: 12px;
+            box-shadow: 0 6px 18px var(--sombra);
+        }
+
+        h2 {
+            color: var(--azul-escuro);
+            margin-bottom: 18px;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: var(--azul);
+            margin: 24px 0 10px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        ul, ol {
+            margin: 12px 0 18px 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .destaque {
+            background: var(--azul-claro);
+            border-left: 5px solid var(--azul-medio);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        figure {
+            margin: 0;
+            background: var(--azul-fundo);
+            border: 1px solid var(--borda);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        figure img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+        }
+
+        figcaption {
+            padding: 12px 14px;
+            font-size: 0.9rem;
+            color: var(--azul-escuro);
+        }
+
+        footer {
+            background: var(--azul-escuro);
+            color: var(--branco);
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 4px 0;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 22px;
+            }
+
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+
+            figure img {
+                height: 230px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="inicio">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Lorem</a></li>
+            <li><a href="#sobre">Ipsum</a></li>
+            <li><a href="#conteudo">Dolor</a></li>
+            <li><a href="#galeria">Sit Amet</a></li>
+            <li><a href="#contato">Consectetur</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="sobre">
+            <h2>Lorem Ipsum Dolor</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                tincidunt, lorem quis consequat volutpat, nisl neque feugiat
+                sapien, vitae posuere lorem ipsum sed justo.
+            </p>
+
+            <p>
+                Curabitur euismod, neque vitae vestibulum tincidunt, mauris
+                libero luctus sapien, vitae tincidunt neque lorem sed erat.
+                Donec vel augue at ipsum interdum tincidunt.
+            </p>
+
+            <div class="destaque">
+                <p>
+                    <strong>Lorem ipsum:</strong> dolor sit amet, consectetur
+                    adipiscing elit. Praesent commodo, nisl vitae tincidunt
+                    feugiat, justo erat consequat lorem, vitae porta ipsum
+                    sapien sed arcu.
+                </p>
+            </div>
+        </section>
+
+        <section id="conteudo">
+            <h2>Consectetur Adipiscing</h2>
+
+            <h3>Lorem Ipsum</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse potenti. Mauris consequat, justo vitae posuere
+                tincidunt, libero lorem commodo erat, sed interdum neque
+                lectus non lorem.
+            </p>
+
+            <h3>Dolor Sit Amet</h3>
+            <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium. Ut enim ad minima veniam,
+                quis nostrum exercitationem ullam corporis suscipit.
+            </p>
+
+            <h3>Lista Lorem</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Consectetur adipiscing elit.</li>
+                <li>Integer tincidunt lorem ipsum.</li>
+                <li>Praesent commodo sapien.</li>
+                <li>Vestibulum vitae neque.</li>
+            </ul>
+
+            <h3>Lista Numerada</h3>
+            <ol>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Curabitur vitae lorem ipsum.</li>
+                <li>Praesent interdum consectetur.</li>
+            </ol>
+        </section>
+
+        <section id="galeria">
+            <h2>Lorem Ipsum Imaginibus</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia curae.
+            </p>
+
+            <div class="galeria">
+
+                <!-- Imagem publicada em página sobre o 3º CPM -->
+                <figure>
+                    <img
+                        src="https://cpmlondrina.com.br/wp-content/uploads/2022/06/3cpm_lonResultado.jpg"
+                        alt="Lorem ipsum dolor sit amet"
+                    >
+                    <figcaption>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </figcaption>
+                </figure>
+
+                <!-- Imagem da visita ao 3º CPM em Cornélio Procópio,
+                     publicada pela Polícia Militar do Paraná -->
+                <figure>
+                    <img
+                        src="https://www.pmpr.pr.gov.br/sites/default/arquivos_restritos/files/imagem/2021-06/60d5dfd50cb55-img-20210624-wa0027.jpg"
+                        alt="Lorem ipsum consectetur adipiscing"
+                    >
+                    <figcaption>
+                        Lorem ipsum consectetur adipiscing elit, sed do eiusmod.
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="https://folhadonortepr.com.br/wp-content/uploads/2022/11/PAG-CORN-GOV-COL-MILITAR02.jpg"
+                        alt="Lorem ipsum dolor"
+                    >
+                    <figcaption>
+                        Lorem ipsum dolor sit amet, sed do eiusmod tempor.
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Lorem Ipsum Contactum</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Quisque eget augue vitae lorem tincidunt pellentesque.
+            </p>
+
+            <p>
+                Donec ullamcorper, sapien vitae interdum posuere, lorem ipsum
+                luctus neque, vitae commodo nisl justo ac erat.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>© Lorem Ipsum — Dolor Sit Amet</p>
+    </footer>
+
+</body>
+</html>
